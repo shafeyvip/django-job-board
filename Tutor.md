@@ -19,3 +19,8 @@ Relations :
     - One-to-Many  [Auther - Posts]          Foreginkey
     - Many-to-Many [Admin_User - Groups]       
     - One-to-One   [User - Profile]
+
+
+static files : [frontend] images, css, javascript
+
+media files : [upload] images
