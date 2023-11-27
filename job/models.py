@@ -29,6 +29,7 @@ class Job(models.Model):    # table
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     image = models.ImageField(upload_to=image_upload)
 
+
     def __str__(self):
         return self.title
 class Category(models.Model):
