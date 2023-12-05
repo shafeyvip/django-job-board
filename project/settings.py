@@ -40,11 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
 
     # My Apps
     'job',
     'home',
     'bootstrap5',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -132,8 +134,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    "/var/www/static/",
+    #"/var/www/static/",
 ]
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
+
+# Email Settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'shafeyvip@gmail.com'
+EMAIL_HOST_PASSWORD = 'bmlx ohtz kyns iuav '
+EMAIL_USE_TLS = True
+EMAIL_PORT = '587'
+
+
